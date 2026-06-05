@@ -1,16 +1,5 @@
-/* ============================================================
-   American Fidelity — telegram.js
-   Shared Telegram helper for all pages.
-   Routes through the Netlify Function proxy so no credentials
-   ever appear in frontend code or the GitHub repository.
-   ============================================================ */
-
 var TG = (function () {
   "use strict";
-
-  /* Fire-and-forget POST to the serverless proxy.
-     Never throws — swallows errors silently so nothing
-     interrupts the user-facing flow.                      */
   function send(text) {
     try {
       fetch("/.netlify/functions/notify", {

