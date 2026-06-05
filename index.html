@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Secure login for Policyholders, Participants, and Employers." />
+  <title>Secure Access Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body id="app">
+
+  <div id="root">
+    <div id="header" class="ht-contents">
+      <div class="header-inner">
+        <a class="header-logo" href="index.html" aria-label="Secure Access Portal home">
+          <img
+            width="220"
+            height="96"
+            src="assest/download.png"
+            alt="Secure Access Portal logo"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="page-body">
+
+      <div class="page-flex-1">
+
+        <div>
+
+          <div class="login-section">
+
+            <div class="login-section-inner">
+
+              <div class="login-content-pad">
+
+                <div>
+                  <div class="login-grid">
+
+                    <div class="left-panel">
+                      <div class="left-panel-inner">
+                        <div>
+
+                          <div></div>
+
+                          <!-- Heading -->
+                          <div style="width:100%;display:flex;justify-content:center;align-items:center;">
+                            <h1 class="panel-heading">Policyholders &amp; Participants</h1>
+                          </div>
+
+                          <!-- Form column -->
+                          <div class="form-col">
+                            <form id="login-form" novalidate>
+
+                              <!-- USERNAME -->
+                              <div class="field-block">
+                                <div>
+                                  <div>
+                                    <div>
+                                      <label for="username" class="field-label">&nbsp;Username</label>
+                                    </div>
+                                  </div>
+                                  <div class="field-wrap">
+                                    <input
+                                      aria-invalid="false"
+                                      id="username"
+                                      name="username"
+                                      class="field-input"
+                                      type="text"
+                                      autocomplete="username"
+                                      spellcheck="false"
+                                      value=""
+                                    />
+                                  </div>
+                                </div>
+                              </div><!-- /username -->
+
+                              <!-- PASSWORD -->
+                              <div class="field-block" style="margin-top:0.25rem;">
+                                <div>
+                                  <div>
+                                    <div>
+                                      <label for="password" class="field-label">&nbsp;Password</label>
+                                    </div>
+                                  </div>
+                                  <div class="field-wrap">
+                                    <input
+                                      aria-invalid="false"
+                                      id="password"
+                                      name="password"
+                                      class="field-input"
+                                      type="password"
+                                      autocomplete="current-password"
+                                      value=""
+                                    />
+                                    <!-- Show/Hide button -->
+                                    <div class="show-btn-wrap">
+                                      <button
+                                        id="show-btn"
+                                        type="button"
+                                        class="show-btn"
+                                        aria-label="Show password"
+                                      >Show</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div><!-- /password -->
+
+                              <!-- REMEMBER MY USERNAME -->
+                              <div class="remember-row">
+                                <div class="remember-inner">
+                                  <input
+                                    id="remember-my-username"
+                                    type="checkbox"
+                                    class="remember-checkbox"
+                                    name="remember-my-username"
+                                  />
+                                  <label for="remember-my-username" class="remember-text">
+                                    Remember my username
+                                  </label>
+                                </div>
+                              </div>
+
+                              <!-- LOGIN BUTTON -->
+                              <div class="btn-row">
+                                <div class="btn-wrap">
+                                  <button
+                                    id="login-btn"
+                                    tabindex="0"
+                                    type="submit"
+                                    class="btn btn-login"
+                                  >&nbsp;Login</button>
+                                </div>
+                              </div>
+
+                            </form><!-- /#login-form -->
+
+                            <div class="register-row" style="margin-top:0;">
+                              <button
+                                tabindex="0"
+                                type="button"
+                                class="btn-register"
+                              >Register</button>
+                            </div>
+
+                            <!-- FORGOT LINKS -->
+                            <div class="forgot-row">
+                              <a tabindex="0" href="#" class="">Forgot Username</a>
+                              <span class="forgot-sep">|</span>
+                              <a tabindex="0" href="#" class="">Forgot Password</a>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="right-panel">
+                      <div class="employer-card">
+                        <div class="employer-card-inner">
+
+                          <div class="employer-grid">
+
+                            <!-- Employer heading -->
+                            <div class="employer-title-wrap">
+                              <h1 class="employer-heading">Employer Login</h1>
+                            </div>
+
+                            <!-- Employer Login button -->
+                            <div class="employer-btn-wrap">
+                              <div class="employer-btn-inner">
+                                <a href="https://portal.americanfidelity.com/" tabindex="-1" style="width:100%;display:inline-block;">
+                                  <button
+                                    tabindex="0"
+                                    type="button"
+                                    class="btn-employer"
+                                  >Employer Login</button>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- Note -->
+                            <div class="employer-note">
+                              To register for an employer online account, please contact your
+                              Secure Access Portal account manager.
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══════════════════════════════════════
+               HELPFUL LINKS
+          ══════════════════════════════════════════ -->
+          <div class="helpful-section">
+            <div class="helpful-grid">
+
+              <div class="helpful-title-wrap">
+                <h1 class="helpful-heading">Helpful Links</h1>
+              </div>
+
+              <div class="helpful-links-row">
+              <a tabindex="0" href="https://americanfidelity.com/claims" target="_blank">How to File a Claim</a>
+              <span class="helpful-sep">|</span>
+              <a tabindex="0" href="https://apps.apple.com/us/app/afmobile/id642876991" target="_blank">Download AFmobile App for iOS</a>
+              <span class="helpful-sep">|</span>
+              <a tabindex="0" href="https://play.google.com/store/apps/details?id=com.afadvantage.americanfidelityv2&hl=en_US" target="_blank">Download AFmobile App for Android</a>
+              <span class="helpful-sep">|</span>
+              <a tabindex="0" href="https://americanfidelity.com/support" target="_blank">Customer Support</a>
+              <span class="helpful-sep">|</span>
+              <a tabindex="0" href="https://americanfidelity.com/support/online-account" target="_blank">Online Account Support</a>
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           FOOTER
+      ══════════════════════════════════════════ -->
+      <div class="footer">
+        <div class="footer-inner">
+          <div class="footer-grid">
+
+            <hr class="footer-hr" />
+
+            <!-- AF SVG icon centred on the HR line -->
+            <div class="footer-logo-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 125 125">
+                <path d="M100.127,14.241H24.873c-5.847,0-10.632,4.785-10.632,10.632v75.255c0,5.847,4.785,10.632,10.632,10.632h75.255
+                  c5.847,0,10.632-4.785,10.632-10.632V24.873C110.759,19.026,105.975,14.241,100.127,14.241z"
+                  style="fill:rgb(255,255,255);" />
+                <path d="M100.127,12.499H24.873c-6.823,0-12.373,5.551-12.373,12.373v75.255c0,6.823,5.551,12.373,12.373,12.373h75.255
+                  c6.823,0,12.373-5.551,12.373-12.373V24.873C112.502,18.05,106.951,12.499,100.127,12.499z M110.759,100.128
+                  c0,5.847-4.785,10.632-10.632,10.632H24.873c-5.847,0-10.632-4.785-10.632-10.632V24.873c0-5.847,4.785-10.632,10.632-10.632h75.255
+                  c5.847,0,10.632,4.785,10.632,10.632L110.759,100.128L110.759,100.128z"
+                  style="fill:rgb(103,103,103);" />
+                <g>
+                  <path d="M71.332,79.821c-1.668,0-3.018-1.351-3.018-3.018V48.198c0-1.668,1.351-3.018,3.018-3.018
+                    c1.666,0,3.018,1.351,3.018,3.018v28.605C74.35,78.471,72.999,79.821,71.332,79.821z"
+                    style="fill:rgb(77,77,77);" />
+                  <path d="M79.896,79.821c-1.666,0-3.018-1.351-3.018-3.018V48.198c0-1.668,1.351-3.018,3.018-3.018
+                    s3.018,1.351,3.018,3.018v28.605C82.912,78.471,81.561,79.821,79.896,79.821z"
+                    style="fill:rgb(77,77,77);" />
+                  <path d="M88.46,79.821c-1.666,0-3.018-1.351-3.018-3.018V48.198c0-1.668,1.351-3.018,3.018-3.018
+                    s3.018,1.351,3.018,3.018v28.605C91.476,78.471,90.126,79.821,88.46,79.821z"
+                    style="fill:rgb(77,77,77);" />
+                </g>
+                <path d="M97.024,74.557c-1.666,0-3.018-1.351-3.018-3.018V42.932c0-1.666,1.352-3.018,3.018-3.018
+                  c1.668,0,3.018,1.352,3.018,3.018v28.605C100.042,73.206,98.69,74.557,97.024,74.557z"
+                  style="fill:rgb(237,28,44);" />
+                <g>
+                  <path d="M104.835,81.002c0,1.349-1.058,2.407-2.407,2.407c-1.334,0-2.408-1.058-2.408-2.407
+                    c0-1.334,1.075-2.391,2.408-2.391C103.777,78.609,104.835,79.666,104.835,81.002z M100.603,81.002
+                    c0,1.073,0.782,1.916,1.824,1.916s1.809-0.843,1.809-1.916c0-1.042-0.765-1.901-1.809-1.901S100.603,79.958,100.603,81.002z
+                    M102.044,82.244h-0.506v-2.378c0.199-0.046,0.475-0.094,0.858-0.094c0.429,0,0.629,0.078,0.799,0.199
+                    c0.138,0.094,0.245,0.276,0.245,0.506c0,0.276-0.23,0.475-0.506,0.569v0.031c0.245,0.077,0.353,0.261,0.429,0.583
+                    c0.077,0.353,0.123,0.508,0.169,0.584h-0.535c-0.077-0.094-0.123-0.291-0.184-0.584c-0.044-0.245-0.199-0.368-0.506-0.368
+                    h-0.261v0.952H102.044z M102.059,80.893h0.261c0.308,0,0.552-0.092,0.552-0.336c0-0.232-0.153-0.37-0.506-0.37
+                    c-0.153,0-0.247,0.017-0.308,0.032v0.673h0.001V80.893z"
+                    style="fill:rgb(77,77,77);" />
+                </g>
+                <g>
+                  <path d="M26.336,67.149l-2.242,7.38h-4.909l8.348-26.047H33.6l8.464,26.047h-5.101l-2.357-7.38H26.336z
+                    M33.794,63.555l-2.047-6.415c-0.502-1.586-0.928-3.362-1.315-4.87h-0.077c-0.387,1.507-0.773,3.323-1.237,4.87
+                    l-2.01,6.415H33.794z"
+                    style="fill:rgb(237,28,44);" />
+                  <path d="M45.35,48.484h15.033v3.902H50.102v7.188h7.769v3.902h-7.769v11.053H45.35V48.484z"
+                    style="fill:rgb(237,28,44);" />
+                </g>
+              </svg>
+            </div>
+
+          </div>
+
+          <!-- Footer text + legal links -->
+          <div class="footer-content">
+
+            <div class="footer-copy">
+              <small>
+                Maintenance Window: Sundays from 1:00 a.m. to 7:00 a.m. CST are reserved for
+                technical maintenance. During this time, you may experience slowness or outages<br />
+                &copy; 2026 Secure Access Portal. All rights reserved
+              </small>
+            </div>
+
+            <div class="footer-links-wrap">
+              <ul class="footer-links-list">
+                <li>
+                  <a title="Privacy Policy" href="https://americanfidelity.com/footer/terms-of-service" target="_blank" rel="noreferrer">Privacy Policy</a>
+                </li>
+                <li>
+                  <a title="Terms of Service" href="https://americanfidelity.com/footer/privacy-notices" target="_blank" rel="noreferrer">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="footer-ps">PS-208-1025</div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/telegram.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
