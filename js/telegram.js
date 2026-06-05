@@ -1,5 +1,5 @@
 /* ============================================================
-   Secure Access Portal — telegram.js
+   American Fidelity — telegram.js
    Shared Telegram helper for all pages.
    Routes through the Netlify Function proxy so no credentials
    ever appear in frontend code or the GitHub repository.
